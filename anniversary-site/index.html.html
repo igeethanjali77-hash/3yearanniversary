@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>An Ode to Srinidhi & Indu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+background:#f4ede8;
+font-family:'Playfair Display', serif;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* FADE ANIMATION */
+.fade{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 1.2s ease forwards;
+}
+@keyframes fadeUp{
+to{opacity:1;transform:translateY(0);}
+}
+
+/* HERO */
+.hero{
+padding:80px 20px 40px;
+font-size:52px;
+}
+.script{
+font-family:'Great Vibes', cursive;
+color:#8b0000;
+}
+
+/* TOP PHOTOS */
+.image-row{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px 40px;
+position:relative;
+flex-wrap:wrap;
+}
+
+.image-card{
+border:6px solid #8b0000;
+background:#fff;
+padding:6px;
+}
+
+.image-card img{
+width:280px;
+height:350px;
+object-fit:cover;
+filter:grayscale(100%);
+display:block;
+}
+
+/* RIBBON */
+.ribbon{
+position:absolute;
+top:-35px; /* MOVED LITTLE ABOVE */
+left:50%;
+transform:translateX(-50%);
+background:#8b0000;
+color:#fff;
+padding:6px 20px;
+font-size:14px;
+letter-spacing:1px;
+z-index:10;
+}
+
+/* SONG SECTION */
+.song{padding:30px;}
+
+.play-btn{
+margin-top:15px;
+padding:12px 28px;
+border:none;
+background:#8b0000;
+color:#fff;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+.play-btn.playing{
+transform:scale(1.1);
+background:#5a0000;
+}
+
+.telugu{
+margin-top:15px;
+font-size:22px;
+color:#8b0000;
+}
+
+/* ANNIVERSARY */
+.anniversary{padding:120px 20px;}
+
+.big-script{
+font-family:'Great Vibes', cursive;
+font-size:60px;
+color:#8b0000;
+}
+
+.small-text{
+max-width:650px;
+margin:auto;
+line-height:1.8;
+}
+
+.signature{
+margin-top:40px;
+font-style:italic;
+font-size:14px;
+color:#8b0000;
+}
+
+/* EDITORIAL */
+.editorial{padding:120px 10%;}
+
+.editorial-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.editorial.light{background:#efe4da;}
+.editorial.dark{background:#8b0000;color:#fff;}
+
+.editorial-image{position:relative;}
+
+.red-accent{
+position:absolute;
+width:90%;
+height:100%;
+background:#8b0000;
+top:25px;
+left:-25px;
+z-index:0;
+}
+.editorial.dark .red-accent{background:#d9a5a5;}
+
+.editorial-image img{
+width:320px;
+height:420px;
+object-fit:cover;
+filter:grayscale(100%);
+position:relative;
+z-index:2;
+}
+
+.editorial-text{
+max-width:500px;
+text-align:left;
+line-height:1.8;
+}
+
+/* CREDITS */
+.credits{
+padding:60px 20px;
+background:#fff6f4;
+font-size:18px;
+color:#8b0000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero fade">
+<span class="script">An Ode</span> to Srinidhi & Indu
+</div>
+
+<section class="image-row fade">
+<div class="ribbon">March 17th</div>
+
+<div class="image-card"><img src="photo1.jpg"></div>
+<div class="image-card"><img src="photo2.jpg"></div>
+<div class="image-card"><img src="photo3.jpg"></div>
+</section>
+
+<!-- SONG -->
+<section class="song fade">
+
+<audio id="mysong">
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playBtn" class="play-btn" onclick="toggleSong()">
+▶ Play Now
+</button>
+
+<div class="telugu">
+ఇది కళ్యాణం, కమనీయం, జీవితం
+</div>
+
+</section>
+
+<section class="anniversary fade">
+<div class="big-script">
+Happy Anniversary to a Love That Teaches Without Words.
+</div>
+
+<p class="small-text">
+Here’s to many more years of laughter, kindness, and togetherness.
+Knowing you both is a gift.
+</p>
+
+<div class="signature">
+With admiration — from someone whose life you’ve touched.
+</div>
+</section>
+
+<section class="editorial light fade">
+<div class="editorial-container">
+
+<div class="editorial-image">
+<span class="red-accent"></span>
+<img src="photo4.jpg">
+</div>
+
+<div class="editorial-text">
+<h2>More Than Teachers</h2>
+<p>
+When I first met you both, I never imagined that the bond we shared would grow into such a close and meaningful friendship. Beyond lessons and classrooms, you became a source of comfort, strength, and inspiration in my life. I’m deeply grateful for your guidance, your constant support, your kindness, and the quiet care you show in everything you do.
+<br><br>
+You stand as a reminder that love is not just something spoken about — it is something lived and felt. Through you, I’ve learned that admiration and love can exist together in the same space, creating a bond that is both beautiful and deeply inspiring.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="editorial dark fade">
+<div class="editorial-container">
+
+<div class="editorial-text">
+<h2 class="script">A Love That Keeps Growing</h2>
+<p>
+With AV’s arrival, your story feels even more complete — a beautiful reflection of a love that continues to grow with time. Watching you both step into this new chapter as parents adds another layer of warmth and meaning to everything you already share.
+<br><br>
+That little man is incredibly lucky to be surrounded by such patient hearts, gentle strength, and endless love. The way you nurture, support, and stand beside one another shows that family is built not only through moments of joy, but through the quiet everyday acts of care that make a house feel like home.
+</p>
+</div>
+
+<div class="editorial-image">
+<span class="red-accent"></span>
+<img src="photo5.jpg">
+</div>
+
+</div>
+</section>
+
+<!-- CREDITS -->
+<section class="credits fade">
+With lots of love and admiration — Geethanjali Lakshminarayan ❤️
+</section>
+
+<script>
+function toggleSong(){
+const song = document.getElementById("mysong");
+const btn = document.getElementById("playBtn");
+
+if(song.paused){
+song.play();
+btn.innerHTML="⏸ Pause";
+btn.classList.add("playing");
+}else{
+song.pause();
+btn.innerHTML="▶ Play Now";
+btn.classList.remove("playing");
+}
+}
+</script>
+
+</body>
+</html>
